@@ -11,6 +11,7 @@ public static void main(String[] args) {
 			"C:\\Users\\gilla\\eclipse-workspace\\Selenium\\Driver\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://www.facebook.com/login/web/");
+	driver.manage().window().maximize();
 	WebElement textuser = driver.findElement(By.id("email"));
 	textuser.sendKeys("12345");
 	WebElement textpass = driver.findElement(By.name("pass"));
